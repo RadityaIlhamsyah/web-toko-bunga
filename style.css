@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Navbar styles */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.logo {
+  margin: 0;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-list li {
+  margin: 0 15px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+/* Jumbotron styles */
+.jumbotron {
+  background: url('images/bunga1.jpg') center/cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 100px 0;
+}
+.jumbotron h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+aside {
+  flex: 1;
+}
+footer {
+  clear: both; /* Tambahkan properti clear: both; */
+  text-align: center;
+  padding: 10px 0;
+  background-color: #d3b8b8;
+  color: #fff;
+}
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.bunga header {
+  text-align: center;
+}
+.bunga section {
+  text-align: center;
+}
+.bunga img {
+  width: 200px;
+}
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#sosmed {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#sosmed img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
